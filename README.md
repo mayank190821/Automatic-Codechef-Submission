@@ -1,2 +1,8 @@
 # Automatic-Codechef-Submission
-In this i used selenium and by using it i login into codechef website, then goto the problem and then paste the code using file on the editor and then submit it.
+- Selenium library is used by me to accomplish this project.
+- Open codechef website
+- Login into it
+- Open problem.
+- Paste the code into the editor using file.
+- Submit it.
+This is how this project is done.
