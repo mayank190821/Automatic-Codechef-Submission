@@ -1,5 +1,6 @@
 from selenium import webdriver
 from getpass import getpass
+import os
 
 # open browser
 browser = webdriver.Chrome()
@@ -13,8 +14,8 @@ passwd.send_keys(getpass("enter passwd"))
 browser.find_element_by_id("edit-submit").click()
 browser.get("http://www.codechef.com/submit/TEST")
 browser.find_element_by_xpath('//*[@id="edit-submit"]').click()
-browser.find_element_by_id("edit_area_toggle_checkbox_edit-program").click()
-with open("arrayAndPeaks.cpp","r") as f:
+browser.find_element_by_id('edit_area_toggle_checkbox_edit-program').click()
+with open(os.path.join("/home/mayank/cpp/","arrayAndPeaks.cpp"),"r") as f:
     code  = f.read()
 code_element=browser.find_element_by_id("edit-program")
 browser.find_element_by_xpath('//*[@id="edit-language"]/option[1]').click()
